@@ -11,7 +11,7 @@ export default function Home({ navigation, route }) {
   return (
     <ScreenWrapper>
       <View style={styles.mainViewContainer}>
-        <Text style={styles.title}>HOME SCREEN</Text>
+        <Text style={styles.title}>Inbox Screen</Text>
         <Text style={styles.title}>{userInfo?.name}</Text>
         <Text style={styles.title}>{userInfo?.email}</Text>
 
@@ -23,7 +23,6 @@ export default function Home({ navigation, route }) {
               dispatch(setUserMeta(null));
               dispatch(setIsLoggedIn(false));
               dispatch(setAppLoader(false));
-
             }, 600);
           }}
         />
